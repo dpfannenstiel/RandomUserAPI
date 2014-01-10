@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAB7CBED187F956300DDC6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBEC187F956300DDC6BD /* Foundation.framework */; };
+		DAB7CBFB187F956300DDC6BD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBFA187F956300DDC6BD /* XCTest.framework */; };
+		DAB7CBFC187F956300DDC6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBEC187F956300DDC6BD /* Foundation.framework */; };
+		DAB7CBFE187F956300DDC6BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBFD187F956300DDC6BD /* UIKit.framework */; };
+		DAB7CC01187F956300DDC6BD /* libRandomUserApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBE9187F956300DDC6BD /* libRandomUserApi.a */; };
+		DAB7CC07187F956300DDC6BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAB7CC05187F956300DDC6BD /* InfoPlist.strings */; };
+		DAB7CC09187F956300DDC6BD /* RandomUserApiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC08187F956300DDC6BD /* RandomUserApiTests.m */; };
+		DAB7CC15187F965700DDC6BD /* RUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC14187F965700DDC6BD /* RUUser.m */; };
+		DAB7CC16187F965700DDC6BD /* RUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC14187F965700DDC6BD /* RUUser.m */; };
+		DAB7CC19187F96A600DDC6BD /* RUObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC18187F96A600DDC6BD /* RUObject.m */; };
+		DAB7CC1A187F96A600DDC6BD /* RUObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC18187F96A600DDC6BD /* RUObject.m */; };
+		DAB7CC1F187F972B00DDC6BD /* RUObject+ModelParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC1E187F972B00DDC6BD /* RUObject+ModelParsing.m */; };
+		DAB7CC20187F972B00DDC6BD /* RUObject+ModelParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC1E187F972B00DDC6BD /* RUObject+ModelParsing.m */; };
+		DAB7CC23187F979600DDC6BD /* RUName.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC22187F979600DDC6BD /* RUName.m */; };
+		DAB7CC24187F979600DDC6BD /* RUName.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC22187F979600DDC6BD /* RUName.m */; };
+		DAB7CC27187F97B100DDC6BD /* RULocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC26187F97B100DDC6BD /* RULocation.m */; };
+		DAB7CC28187F97B100DDC6BD /* RULocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC26187F97B100DDC6BD /* RULocation.m */; };
+		DAB7CC2B187F9A9700DDC6BD /* RUObject+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC2A187F9A9700DDC6BD /* RUObject+Parsing.m */; };
+		DAB7CC2C187F9A9700DDC6BD /* RUObject+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC2A187F9A9700DDC6BD /* RUObject+Parsing.m */; };
+		DAB7CC33187F9AC000DDC6BD /* RULocation+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC32187F9AC000DDC6BD /* RULocation+Parsing.m */; };
+		DAB7CC34187F9AC000DDC6BD /* RULocation+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC32187F9AC000DDC6BD /* RULocation+Parsing.m */; };
+		DAB7CC37187F9AE300DDC6BD /* RUName+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC36187F9AE300DDC6BD /* RUName+Parsing.m */; };
+		DAB7CC38187F9AE300DDC6BD /* RUName+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC36187F9AE300DDC6BD /* RUName+Parsing.m */; };
+		DAB7CC3B187F9B0600DDC6BD /* RUUser+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC3A187F9B0600DDC6BD /* RUUser+Parsing.m */; };
+		DAB7CC3C187F9B0600DDC6BD /* RUUser+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC3A187F9B0600DDC6BD /* RUUser+Parsing.m */; };
+		DAB7CC40187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC3F187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m */; };
+		DAB7CC41187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC3F187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m */; };
+		DAB7CC45187FA3AC00DDC6BD /* RUUser+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC44187FA3AC00DDC6BD /* RUUser+Extension.m */; };
+		DAB7CC46187FA3AC00DDC6BD /* RUUser+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC44187FA3AC00DDC6BD /* RUUser+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAB7CBFF187F956300DDC6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB7CBE1187F956300DDC6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB7CBE8187F956300DDC6BD;
+			remoteInfo = RandomUserApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DAB7CBE7187F956300DDC6BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DAB7CBE9187F956300DDC6BD /* libRandomUserApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRandomUserApi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB7CBEC187F956300DDC6BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAB7CBF0187F956300DDC6BD /* RandomUserApi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomUserApi-Prefix.pch"; sourceTree = "<group>"; };
+		DAB7CBF9187F956300DDC6BD /* RandomUserApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUserApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB7CBFA187F956300DDC6BD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DAB7CBFD187F956300DDC6BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DAB7CC04187F956300DDC6BD /* RandomUserApiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RandomUserApiTests-Info.plist"; sourceTree = "<group>"; };
+		DAB7CC06187F956300DDC6BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAB7CC08187F956300DDC6BD /* RandomUserApiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomUserApiTests.m; sourceTree = "<group>"; };
+		DAB7CC12187F958E00DDC6BD /* RUKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUKit.h; sourceTree = "<group>"; };
+		DAB7CC13187F965700DDC6BD /* RUUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUUser.h; sourceTree = "<group>"; };
+		DAB7CC14187F965700DDC6BD /* RUUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUUser.m; sourceTree = "<group>"; };
+		DAB7CC17187F96A600DDC6BD /* RUObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUObject.h; sourceTree = "<group>"; };
+		DAB7CC18187F96A600DDC6BD /* RUObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUObject.m; sourceTree = "<group>"; };
+		DAB7CC1D187F972B00DDC6BD /* RUObject+ModelParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RUObject+ModelParsing.h"; path = "Parsing/RUObject+ModelParsing.h"; sourceTree = "<group>"; };
+		DAB7CC1E187F972B00DDC6BD /* RUObject+ModelParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RUObject+ModelParsing.m"; path = "Parsing/RUObject+ModelParsing.m"; sourceTree = "<group>"; };
+		DAB7CC21187F979600DDC6BD /* RUName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUName.h; sourceTree = "<group>"; };
+		DAB7CC22187F979600DDC6BD /* RUName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUName.m; sourceTree = "<group>"; };
+		DAB7CC25187F97B100DDC6BD /* RULocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RULocation.h; sourceTree = "<group>"; };
+		DAB7CC26187F97B100DDC6BD /* RULocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RULocation.m; sourceTree = "<group>"; };
+		DAB7CC29187F9A9700DDC6BD /* RUObject+Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RUObject+Parsing.h"; path = "Parsing/RUObject+Parsing.h"; sourceTree = "<group>"; };
+		DAB7CC2A187F9A9700DDC6BD /* RUObject+Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RUObject+Parsing.m"; path = "Parsing/RUObject+Parsing.m"; sourceTree = "<group>"; };
+		DAB7CC31187F9AC000DDC6BD /* RULocation+Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RULocation+Parsing.h"; path = "Parsing/RULocation+Parsing.h"; sourceTree = "<group>"; };
+		DAB7CC32187F9AC000DDC6BD /* RULocation+Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RULocation+Parsing.m"; path = "Parsing/RULocation+Parsing.m"; sourceTree = "<group>"; };
+		DAB7CC35187F9AE300DDC6BD /* RUName+Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RUName+Parsing.h"; path = "Parsing/RUName+Parsing.h"; sourceTree = "<group>"; };
+		DAB7CC36187F9AE300DDC6BD /* RUName+Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RUName+Parsing.m"; path = "Parsing/RUName+Parsing.m"; sourceTree = "<group>"; };
+		DAB7CC39187F9B0600DDC6BD /* RUUser+Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RUUser+Parsing.h"; path = "Parsing/RUUser+Parsing.h"; sourceTree = "<group>"; };
+		DAB7CC3A187F9B0600DDC6BD /* RUUser+Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RUUser+Parsing.m"; path = "Parsing/RUUser+Parsing.m"; sourceTree = "<group>"; };
+		DAB7CC3E187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+JSONParsingInformalProtocol.h"; path = "FoundationExtensions/NSString+JSONParsingInformalProtocol.h"; sourceTree = "<group>"; };
+		DAB7CC3F187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+JSONParsingInformalProtocol.m"; path = "FoundationExtensions/NSString+JSONParsingInformalProtocol.m"; sourceTree = "<group>"; };
+		DAB7CC43187FA3AC00DDC6BD /* RUUser+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RUUser+Extension.h"; path = "ObjectExtensions/RUUser+Extension.h"; sourceTree = "<group>"; };
+		DAB7CC44187FA3AC00DDC6BD /* RUUser+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RUUser+Extension.m"; path = "ObjectExtensions/RUUser+Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAB7CBE6187F956300DDC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CBED187F956300DDC6BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB7CBF6187F956300DDC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CBFB187F956300DDC6BD /* XCTest.framework in Frameworks */,
+				DAB7CBFE187F956300DDC6BD /* UIKit.framework in Frameworks */,
+				DAB7CC01187F956300DDC6BD /* libRandomUserApi.a in Frameworks */,
+				DAB7CBFC187F956300DDC6BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAB7CBE0187F956300DDC6BD = {
+			isa = PBXGroup;
+			children = (
+				DAB7CBEE187F956300DDC6BD /* RandomUserApi */,
+				DAB7CC02187F956300DDC6BD /* RandomUserApiTests */,
+				DAB7CBEB187F956300DDC6BD /* Frameworks */,
+				DAB7CBEA187F956300DDC6BD /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		DAB7CBEA187F956300DDC6BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CBE9187F956300DDC6BD /* libRandomUserApi.a */,
+				DAB7CBF9187F956300DDC6BD /* RandomUserApiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB7CBEB187F956300DDC6BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CBEC187F956300DDC6BD /* Foundation.framework */,
+				DAB7CBFA187F956300DDC6BD /* XCTest.framework */,
+				DAB7CBFD187F956300DDC6BD /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAB7CBEE187F956300DDC6BD /* RandomUserApi */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC12187F958E00DDC6BD /* RUKit.h */,
+				DAB7CC1B187F96AF00DDC6BD /* ModelObjects */,
+				DAB7CC1C187F96CB00DDC6BD /* Parsing */,
+				DAB7CC42187FA37700DDC6BD /* ObjectExtensions */,
+				DAB7CC3D187F9F5F00DDC6BD /* FoundationExtensions */,
+				DAB7CBEF187F956300DDC6BD /* Supporting Files */,
+			);
+			path = RandomUserApi;
+			sourceTree = "<group>";
+		};
+		DAB7CBEF187F956300DDC6BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CBF0187F956300DDC6BD /* RandomUserApi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAB7CC02187F956300DDC6BD /* RandomUserApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC08187F956300DDC6BD /* RandomUserApiTests.m */,
+				DAB7CC03187F956300DDC6BD /* Supporting Files */,
+			);
+			path = RandomUserApiTests;
+			sourceTree = "<group>";
+		};
+		DAB7CC03187F956300DDC6BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC04187F956300DDC6BD /* RandomUserApiTests-Info.plist */,
+				DAB7CC05187F956300DDC6BD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAB7CC1B187F96AF00DDC6BD /* ModelObjects */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC17187F96A600DDC6BD /* RUObject.h */,
+				DAB7CC18187F96A600DDC6BD /* RUObject.m */,
+				DAB7CC13187F965700DDC6BD /* RUUser.h */,
+				DAB7CC14187F965700DDC6BD /* RUUser.m */,
+				DAB7CC21187F979600DDC6BD /* RUName.h */,
+				DAB7CC22187F979600DDC6BD /* RUName.m */,
+				DAB7CC25187F97B100DDC6BD /* RULocation.h */,
+				DAB7CC26187F97B100DDC6BD /* RULocation.m */,
+			);
+			path = ModelObjects;
+			sourceTree = "<group>";
+		};
+		DAB7CC1C187F96CB00DDC6BD /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC1D187F972B00DDC6BD /* RUObject+ModelParsing.h */,
+				DAB7CC1E187F972B00DDC6BD /* RUObject+ModelParsing.m */,
+				DAB7CC29187F9A9700DDC6BD /* RUObject+Parsing.h */,
+				DAB7CC2A187F9A9700DDC6BD /* RUObject+Parsing.m */,
+				DAB7CC39187F9B0600DDC6BD /* RUUser+Parsing.h */,
+				DAB7CC3A187F9B0600DDC6BD /* RUUser+Parsing.m */,
+				DAB7CC35187F9AE300DDC6BD /* RUName+Parsing.h */,
+				DAB7CC36187F9AE300DDC6BD /* RUName+Parsing.m */,
+				DAB7CC31187F9AC000DDC6BD /* RULocation+Parsing.h */,
+				DAB7CC32187F9AC000DDC6BD /* RULocation+Parsing.m */,
+			);
+			name = Parsing;
+			sourceTree = "<group>";
+		};
+		DAB7CC3D187F9F5F00DDC6BD /* FoundationExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC3E187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.h */,
+				DAB7CC3F187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m */,
+			);
+			name = FoundationExtensions;
+			sourceTree = "<group>";
+		};
+		DAB7CC42187FA37700DDC6BD /* ObjectExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC43187FA3AC00DDC6BD /* RUUser+Extension.h */,
+				DAB7CC44187FA3AC00DDC6BD /* RUUser+Extension.m */,
+			);
+			name = ObjectExtensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAB7CBE8187F956300DDC6BD /* RandomUserApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB7CC0C187F956300DDC6BD /* Build configuration list for PBXNativeTarget "RandomUserApi" */;
+			buildPhases = (
+				DAB7CBE5187F956300DDC6BD /* Sources */,
+				DAB7CBE6187F956300DDC6BD /* Frameworks */,
+				DAB7CBE7187F956300DDC6BD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomUserApi;
+			productName = RandomUserApi;
+			productReference = DAB7CBE9187F956300DDC6BD /* libRandomUserApi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DAB7CBF8187F956300DDC6BD /* RandomUserApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB7CC0F187F956300DDC6BD /* Build configuration list for PBXNativeTarget "RandomUserApiTests" */;
+			buildPhases = (
+				DAB7CBF5187F956300DDC6BD /* Sources */,
+				DAB7CBF6187F956300DDC6BD /* Frameworks */,
+				DAB7CBF7187F956300DDC6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB7CC00187F956300DDC6BD /* PBXTargetDependency */,
+			);
+			name = RandomUserApiTests;
+			productName = RandomUserApiTests;
+			productReference = DAB7CBF9187F956300DDC6BD /* RandomUserApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAB7CBE1187F956300DDC6BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RU;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Dustin Pfannenstiel";
+			};
+			buildConfigurationList = DAB7CBE4187F956300DDC6BD /* Build configuration list for PBXProject "RandomUserApi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAB7CBE0187F956300DDC6BD;
+			productRefGroup = DAB7CBEA187F956300DDC6BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB7CBE8187F956300DDC6BD /* RandomUserApi */,
+				DAB7CBF8187F956300DDC6BD /* RandomUserApiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAB7CBF7187F956300DDC6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CC07187F956300DDC6BD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB7CBE5187F956300DDC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CC2B187F9A9700DDC6BD /* RUObject+Parsing.m in Sources */,
+				DAB7CC27187F97B100DDC6BD /* RULocation.m in Sources */,
+				DAB7CC15187F965700DDC6BD /* RUUser.m in Sources */,
+				DAB7CC45187FA3AC00DDC6BD /* RUUser+Extension.m in Sources */,
+				DAB7CC1F187F972B00DDC6BD /* RUObject+ModelParsing.m in Sources */,
+				DAB7CC40187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m in Sources */,
+				DAB7CC37187F9AE300DDC6BD /* RUName+Parsing.m in Sources */,
+				DAB7CC3B187F9B0600DDC6BD /* RUUser+Parsing.m in Sources */,
+				DAB7CC19187F96A600DDC6BD /* RUObject.m in Sources */,
+				DAB7CC33187F9AC000DDC6BD /* RULocation+Parsing.m in Sources */,
+				DAB7CC23187F979600DDC6BD /* RUName.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB7CBF5187F956300DDC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CC3C187F9B0600DDC6BD /* RUUser+Parsing.m in Sources */,
+				DAB7CC20187F972B00DDC6BD /* RUObject+ModelParsing.m in Sources */,
+				DAB7CC1A187F96A600DDC6BD /* RUObject.m in Sources */,
+				DAB7CC46187FA3AC00DDC6BD /* RUUser+Extension.m in Sources */,
+				DAB7CC34187F9AC000DDC6BD /* RULocation+Parsing.m in Sources */,
+				DAB7CC09187F956300DDC6BD /* RandomUserApiTests.m in Sources */,
+				DAB7CC24187F979600DDC6BD /* RUName.m in Sources */,
+				DAB7CC38187F9AE300DDC6BD /* RUName+Parsing.m in Sources */,
+				DAB7CC16187F965700DDC6BD /* RUUser.m in Sources */,
+				DAB7CC28187F97B100DDC6BD /* RULocation.m in Sources */,
+				DAB7CC41187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m in Sources */,
+				DAB7CC2C187F9A9700DDC6BD /* RUObject+Parsing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAB7CC00187F956300DDC6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB7CBE8187F956300DDC6BD /* RandomUserApi */;
+			targetProxy = DAB7CBFF187F956300DDC6BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAB7CC05187F956300DDC6BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB7CC06187F956300DDC6BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAB7CC0A187F956300DDC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAB7CC0B187F956300DDC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAB7CC0D187F956300DDC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RandomUserApi.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RandomUserApi/RandomUserApi-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DAB7CC0E187F956300DDC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RandomUserApi.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RandomUserApi/RandomUserApi-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DAB7CC10187F956300DDC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RandomUserApi/RandomUserApi-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RandomUserApiTests/RandomUserApiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DAB7CC11187F956300DDC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RandomUserApi/RandomUserApi-Prefix.pch";
+				INFOPLIST_FILE = "RandomUserApiTests/RandomUserApiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB7CBE4187F956300DDC6BD /* Build configuration list for PBXProject "RandomUserApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB7CC0A187F956300DDC6BD /* Debug */,
+				DAB7CC0B187F956300DDC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB7CC0C187F956300DDC6BD /* Build configuration list for PBXNativeTarget "RandomUserApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB7CC0D187F956300DDC6BD /* Debug */,
+				DAB7CC0E187F956300DDC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAB7CC0F187F956300DDC6BD /* Build configuration list for PBXNativeTarget "RandomUserApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB7CC10187F956300DDC6BD /* Debug */,
+				DAB7CC11187F956300DDC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAB7CBE1187F956300DDC6BD /* Project object */;
+}
