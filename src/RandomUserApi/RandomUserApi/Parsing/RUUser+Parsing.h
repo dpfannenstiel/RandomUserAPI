@@ -10,4 +10,16 @@
 
 @interface RUUser (Parsing)
 
+-(void)parseName:(id)value;
+-(void)parseLocation:(id)value;
+-(void)parseGender:(id)value;
+-(void)parseEmail:(id)value;
+-(void)parsePassword:(id)value;
+-(void)parseMd5_hash:(id)value;
+-(void)parseSha1_hash:(id)value;
+-(void)parsePhone:(id)value;
+-(void)parseCell:(id)value;
+-(void)parseSSN:(id)value;
+-(void)parsePicture:(id)value;
+
 @end

@@ -36,6 +36,31 @@
 		DAB7CC41187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC3F187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m */; };
 		DAB7CC45187FA3AC00DDC6BD /* RUUser+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC44187FA3AC00DDC6BD /* RUUser+Extension.m */; };
 		DAB7CC46187FA3AC00DDC6BD /* RUUser+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC44187FA3AC00DDC6BD /* RUUser+Extension.m */; };
+		DAB7CC4C187FA4FE00DDC6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBEC187F956300DDC6BD /* Foundation.framework */; };
+		DAB7CC4E187FA4FE00DDC6BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CC4D187FA4FE00DDC6BD /* CoreGraphics.framework */; };
+		DAB7CC4F187FA4FE00DDC6BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBFD187F956300DDC6BD /* UIKit.framework */; };
+		DAB7CC55187FA4FE00DDC6BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAB7CC53187FA4FE00DDC6BD /* InfoPlist.strings */; };
+		DAB7CC57187FA4FE00DDC6BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC56187FA4FE00DDC6BD /* main.m */; };
+		DAB7CC5B187FA4FE00DDC6BD /* RUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC5A187FA4FE00DDC6BD /* RUAppDelegate.m */; };
+		DAB7CC5D187FA4FE00DDC6BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB7CC5C187FA4FE00DDC6BD /* Images.xcassets */; };
+		DAB7CC63187FA4FE00DDC6BD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBFA187F956300DDC6BD /* XCTest.framework */; };
+		DAB7CC64187FA4FE00DDC6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBEC187F956300DDC6BD /* Foundation.framework */; };
+		DAB7CC65187FA4FE00DDC6BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBFD187F956300DDC6BD /* UIKit.framework */; };
+		DAB7CC6D187FA4FE00DDC6BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAB7CC6B187FA4FE00DDC6BD /* InfoPlist.strings */; };
+		DAB7CC6F187FA4FE00DDC6BD /* RUSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7CC6E187FA4FE00DDC6BD /* RUSampleAppTests.m */; };
+		DAB7CC76187FA51100DDC6BD /* libRandomUserApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBE9187F956300DDC6BD /* libRandomUserApi.a */; };
+		DAB7CC77187FA53500DDC6BD /* RUKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC12187F958E00DDC6BD /* RUKit.h */; };
+		DAB7CC78187FA53500DDC6BD /* RUObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC17187F96A600DDC6BD /* RUObject.h */; };
+		DAB7CC79187FA53500DDC6BD /* RUUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC13187F965700DDC6BD /* RUUser.h */; };
+		DAB7CC7A187FA53500DDC6BD /* RUName.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC21187F979600DDC6BD /* RUName.h */; };
+		DAB7CC7B187FA53500DDC6BD /* RULocation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC25187F97B100DDC6BD /* RULocation.h */; };
+		DAB7CC7C187FA53500DDC6BD /* RUObject+ModelParsing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC1D187F972B00DDC6BD /* RUObject+ModelParsing.h */; };
+		DAB7CC7D187FA53500DDC6BD /* RUObject+Parsing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC29187F9A9700DDC6BD /* RUObject+Parsing.h */; };
+		DAB7CC7E187FA53500DDC6BD /* RUUser+Parsing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC39187F9B0600DDC6BD /* RUUser+Parsing.h */; };
+		DAB7CC7F187FA53500DDC6BD /* RUName+Parsing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC35187F9AE300DDC6BD /* RUName+Parsing.h */; };
+		DAB7CC80187FA53500DDC6BD /* RULocation+Parsing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC31187F9AC000DDC6BD /* RULocation+Parsing.h */; };
+		DAB7CC81187FA53500DDC6BD /* RUUser+Extension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC43187FA3AC00DDC6BD /* RUUser+Extension.h */; };
+		DAB7CC82187FA53500DDC6BD /* NSString+JSONParsingInformalProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAB7CC3E187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +71,13 @@
 			remoteGlobalIDString = DAB7CBE8187F956300DDC6BD;
 			remoteInfo = RandomUserApi;
 		};
+		DAB7CC66187FA4FE00DDC6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB7CBE1187F956300DDC6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB7CC4A187FA4FD00DDC6BD;
+			remoteInfo = RUSampleApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +87,18 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				DAB7CC77187FA53500DDC6BD /* RUKit.h in CopyFiles */,
+				DAB7CC78187FA53500DDC6BD /* RUObject.h in CopyFiles */,
+				DAB7CC79187FA53500DDC6BD /* RUUser.h in CopyFiles */,
+				DAB7CC7A187FA53500DDC6BD /* RUName.h in CopyFiles */,
+				DAB7CC7B187FA53500DDC6BD /* RULocation.h in CopyFiles */,
+				DAB7CC7C187FA53500DDC6BD /* RUObject+ModelParsing.h in CopyFiles */,
+				DAB7CC7D187FA53500DDC6BD /* RUObject+Parsing.h in CopyFiles */,
+				DAB7CC7E187FA53500DDC6BD /* RUUser+Parsing.h in CopyFiles */,
+				DAB7CC7F187FA53500DDC6BD /* RUName+Parsing.h in CopyFiles */,
+				DAB7CC80187FA53500DDC6BD /* RULocation+Parsing.h in CopyFiles */,
+				DAB7CC81187FA53500DDC6BD /* RUUser+Extension.h in CopyFiles */,
+				DAB7CC82187FA53500DDC6BD /* NSString+JSONParsingInformalProtocol.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +137,19 @@
 		DAB7CC3F187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+JSONParsingInformalProtocol.m"; path = "FoundationExtensions/NSString+JSONParsingInformalProtocol.m"; sourceTree = "<group>"; };
 		DAB7CC43187FA3AC00DDC6BD /* RUUser+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RUUser+Extension.h"; path = "ObjectExtensions/RUUser+Extension.h"; sourceTree = "<group>"; };
 		DAB7CC44187FA3AC00DDC6BD /* RUUser+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RUUser+Extension.m"; path = "ObjectExtensions/RUUser+Extension.m"; sourceTree = "<group>"; };
+		DAB7CC4B187FA4FD00DDC6BD /* RUSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RUSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB7CC4D187FA4FE00DDC6BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DAB7CC52187FA4FE00DDC6BD /* RUSampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RUSampleApp-Info.plist"; sourceTree = "<group>"; };
+		DAB7CC54187FA4FE00DDC6BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAB7CC56187FA4FE00DDC6BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAB7CC58187FA4FE00DDC6BD /* RUSampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RUSampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		DAB7CC59187FA4FE00DDC6BD /* RUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUAppDelegate.h; sourceTree = "<group>"; };
+		DAB7CC5A187FA4FE00DDC6BD /* RUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RUAppDelegate.m; sourceTree = "<group>"; };
+		DAB7CC5C187FA4FE00DDC6BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DAB7CC62187FA4FE00DDC6BD /* RUSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RUSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB7CC6A187FA4FE00DDC6BD /* RUSampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RUSampleAppTests-Info.plist"; sourceTree = "<group>"; };
+		DAB7CC6C187FA4FE00DDC6BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAB7CC6E187FA4FE00DDC6BD /* RUSampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RUSampleAppTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +172,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAB7CC48187FA4FD00DDC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CC76187FA51100DDC6BD /* libRandomUserApi.a in Frameworks */,
+				DAB7CC4E187FA4FE00DDC6BD /* CoreGraphics.framework in Frameworks */,
+				DAB7CC4F187FA4FE00DDC6BD /* UIKit.framework in Frameworks */,
+				DAB7CC4C187FA4FE00DDC6BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB7CC5F187FA4FE00DDC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CC63187FA4FE00DDC6BD /* XCTest.framework in Frameworks */,
+				DAB7CC65187FA4FE00DDC6BD /* UIKit.framework in Frameworks */,
+				DAB7CC64187FA4FE00DDC6BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -123,6 +201,8 @@
 			children = (
 				DAB7CBEE187F956300DDC6BD /* RandomUserApi */,
 				DAB7CC02187F956300DDC6BD /* RandomUserApiTests */,
+				DAB7CC50187FA4FE00DDC6BD /* RUSampleApp */,
+				DAB7CC68187FA4FE00DDC6BD /* RUSampleAppTests */,
 				DAB7CBEB187F956300DDC6BD /* Frameworks */,
 				DAB7CBEA187F956300DDC6BD /* Products */,
 			);
@@ -134,6 +214,8 @@
 			children = (
 				DAB7CBE9187F956300DDC6BD /* libRandomUserApi.a */,
 				DAB7CBF9187F956300DDC6BD /* RandomUserApiTests.xctest */,
+				DAB7CC4B187FA4FD00DDC6BD /* RUSampleApp.app */,
+				DAB7CC62187FA4FE00DDC6BD /* RUSampleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +226,7 @@
 				DAB7CBEC187F956300DDC6BD /* Foundation.framework */,
 				DAB7CBFA187F956300DDC6BD /* XCTest.framework */,
 				DAB7CBFD187F956300DDC6BD /* UIKit.framework */,
+				DAB7CC4D187FA4FE00DDC6BD /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,6 +320,46 @@
 			name = ObjectExtensions;
 			sourceTree = "<group>";
 		};
+		DAB7CC50187FA4FE00DDC6BD /* RUSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC59187FA4FE00DDC6BD /* RUAppDelegate.h */,
+				DAB7CC5A187FA4FE00DDC6BD /* RUAppDelegate.m */,
+				DAB7CC5C187FA4FE00DDC6BD /* Images.xcassets */,
+				DAB7CC51187FA4FE00DDC6BD /* Supporting Files */,
+			);
+			path = RUSampleApp;
+			sourceTree = "<group>";
+		};
+		DAB7CC51187FA4FE00DDC6BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC52187FA4FE00DDC6BD /* RUSampleApp-Info.plist */,
+				DAB7CC53187FA4FE00DDC6BD /* InfoPlist.strings */,
+				DAB7CC56187FA4FE00DDC6BD /* main.m */,
+				DAB7CC58187FA4FE00DDC6BD /* RUSampleApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAB7CC68187FA4FE00DDC6BD /* RUSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC6E187FA4FE00DDC6BD /* RUSampleAppTests.m */,
+				DAB7CC69187FA4FE00DDC6BD /* Supporting Files */,
+			);
+			path = RUSampleAppTests;
+			sourceTree = "<group>";
+		};
+		DAB7CC69187FA4FE00DDC6BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7CC6A187FA4FE00DDC6BD /* RUSampleAppTests-Info.plist */,
+				DAB7CC6B187FA4FE00DDC6BD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,6 +398,41 @@
 			productReference = DAB7CBF9187F956300DDC6BD /* RandomUserApiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DAB7CC4A187FA4FD00DDC6BD /* RUSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB7CC70187FA4FE00DDC6BD /* Build configuration list for PBXNativeTarget "RUSampleApp" */;
+			buildPhases = (
+				DAB7CC47187FA4FD00DDC6BD /* Sources */,
+				DAB7CC48187FA4FD00DDC6BD /* Frameworks */,
+				DAB7CC49187FA4FD00DDC6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RUSampleApp;
+			productName = RUSampleApp;
+			productReference = DAB7CC4B187FA4FD00DDC6BD /* RUSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAB7CC61187FA4FE00DDC6BD /* RUSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB7CC73187FA4FE00DDC6BD /* Build configuration list for PBXNativeTarget "RUSampleAppTests" */;
+			buildPhases = (
+				DAB7CC5E187FA4FE00DDC6BD /* Sources */,
+				DAB7CC5F187FA4FE00DDC6BD /* Frameworks */,
+				DAB7CC60187FA4FE00DDC6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB7CC67187FA4FE00DDC6BD /* PBXTargetDependency */,
+			);
+			name = RUSampleAppTests;
+			productName = RUSampleAppTests;
+			productReference = DAB7CC62187FA4FE00DDC6BD /* RUSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -284,6 +442,14 @@
 				CLASSPREFIX = RU;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Dustin Pfannenstiel";
+				TargetAttributes = {
+					DAB7CBF8187F956300DDC6BD = {
+						TestTargetID = DAB7CC4A187FA4FD00DDC6BD;
+					};
+					DAB7CC61187FA4FE00DDC6BD = {
+						TestTargetID = DAB7CC4A187FA4FD00DDC6BD;
+					};
+				};
 			};
 			buildConfigurationList = DAB7CBE4187F956300DDC6BD /* Build configuration list for PBXProject "RandomUserApi" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -299,6 +465,8 @@
 			targets = (
 				DAB7CBE8187F956300DDC6BD /* RandomUserApi */,
 				DAB7CBF8187F956300DDC6BD /* RandomUserApiTests */,
+				DAB7CC4A187FA4FD00DDC6BD /* RUSampleApp */,
+				DAB7CC61187FA4FE00DDC6BD /* RUSampleAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -309,6 +477,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB7CC07187F956300DDC6BD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB7CC49187FA4FD00DDC6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CC55187FA4FE00DDC6BD /* InfoPlist.strings in Resources */,
+				DAB7CC5D187FA4FE00DDC6BD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB7CC60187FA4FE00DDC6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CC6D187FA4FE00DDC6BD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +537,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAB7CC47187FA4FD00DDC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CC57187FA4FE00DDC6BD /* main.m in Sources */,
+				DAB7CC5B187FA4FE00DDC6BD /* RUAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB7CC5E187FA4FE00DDC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7CC6F187FA4FE00DDC6BD /* RUSampleAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -360,6 +562,11 @@
 			target = DAB7CBE8187F956300DDC6BD /* RandomUserApi */;
 			targetProxy = DAB7CBFF187F956300DDC6BD /* PBXContainerItemProxy */;
 		};
+		DAB7CC67187FA4FE00DDC6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB7CC4A187FA4FD00DDC6BD /* RUSampleApp */;
+			targetProxy = DAB7CC66187FA4FE00DDC6BD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -367,6 +574,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				DAB7CC06187F956300DDC6BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DAB7CC53187FA4FE00DDC6BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB7CC54187FA4FE00DDC6BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DAB7CC6B187FA4FE00DDC6BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB7CC6C187FA4FE00DDC6BD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -472,6 +695,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RUSampleApp.app/RUSampleApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -485,6 +709,7 @@
 				);
 				INFOPLIST_FILE = "RandomUserApiTests/RandomUserApiTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -493,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RUSampleApp.app/RUSampleApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -502,6 +728,91 @@
 				GCC_PREFIX_HEADER = "RandomUserApi/RandomUserApi-Prefix.pch";
 				INFOPLIST_FILE = "RandomUserApiTests/RandomUserApiTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		DAB7CC71187FA4FE00DDC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RUSampleApp/RUSampleApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RUSampleApp/RUSampleApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAB7CC72187FA4FE00DDC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RUSampleApp/RUSampleApp-Prefix.pch";
+				INFOPLIST_FILE = "RUSampleApp/RUSampleApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DAB7CC74187FA4FE00DDC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RUSampleApp.app/RUSampleApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RUSampleApp/RUSampleApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RUSampleAppTests/RUSampleAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DAB7CC75187FA4FE00DDC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RUSampleApp.app/RUSampleApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RUSampleApp/RUSampleApp-Prefix.pch";
+				INFOPLIST_FILE = "RUSampleAppTests/RUSampleAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -531,6 +842,22 @@
 			buildConfigurations = (
 				DAB7CC10187F956300DDC6BD /* Debug */,
 				DAB7CC11187F956300DDC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAB7CC70187FA4FE00DDC6BD /* Build configuration list for PBXNativeTarget "RUSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB7CC71187FA4FE00DDC6BD /* Debug */,
+				DAB7CC72187FA4FE00DDC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAB7CC73187FA4FE00DDC6BD /* Build configuration list for PBXNativeTarget "RUSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB7CC74187FA4FE00DDC6BD /* Debug */,
+				DAB7CC75187FA4FE00DDC6BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -10,15 +10,9 @@
 
 @interface RULocation : RUObject
 
+@property (nonatomic, strong) NSString *street;
+@property (nonatomic, strong) NSString *city;
+@property (nonatomic, strong) NSString *state;
+@property (nonatomic, strong) NSString *zip;
+
 @end
-
-/*
-
- location: {
- street: "7159 edwards rd",
- city: "seymour",
- state: "pennsylvania",
- zip: "37284"
- },
-
-*/

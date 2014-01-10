@@ -21,6 +21,8 @@
 
 @property (nonatomic, strong) NSString *email;
 
+@property (nonatomic, strong) NSString *password;
+
 @property (nonatomic, strong) NSString *md5Hash;
 
 @property (nonatomic, strong) NSString *sha1Hash;

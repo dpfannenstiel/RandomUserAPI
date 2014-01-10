@@ -10,14 +10,8 @@
 
 @interface RUName : RUObject
 
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *first;
+@property (nonatomic, strong) NSString *last;
+
 @end
-
-/*
-
- name: {
- title: "mr",
- first: "gabriel",
- last: "richardson"
- },
-
-*/

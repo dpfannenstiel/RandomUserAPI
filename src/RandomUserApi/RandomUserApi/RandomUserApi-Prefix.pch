@@ -16,11 +16,11 @@
 		_Pragma("clang diagnostic pop") \
 	} while (0)
 
-#ifdef DEBUG
+#if DEBUG
 	#define DLog(...) NSLog(__VA_ARGS__)
 	#define LogMethod() NSLog(@"logged method call: -[%@ %@] (line %d)", self, NSStringFromSelector(_cmd), __LINE__)
 	#define DataLog(identifier, data) NSLog(@"Logged %@: %@", identifier, [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding])
-#ifdef ADHOC
+#elif ADHOC
 	#define DLog(...) NSLog(__VA_ARGS__)
 	#define LogMethod() NSLog(@"logged method call: -[%@ %@] (line %d)", self, NSStringFromSelector(_cmd), __LINE__)
 	#define DataLog(identifier, data) /* */

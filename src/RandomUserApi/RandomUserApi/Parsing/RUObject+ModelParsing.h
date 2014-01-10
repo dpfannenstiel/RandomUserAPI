@@ -20,8 +20,9 @@ extern NSString * const RUObjectException;
 	} \
 	self.target = parsedValue;
 
-#define RUParseModelObject(target, class, value) \
-	class object = [[class alloc] initWithJSONDictionary:value]; \
+// TODO: Figure this out.
+#define RUParseModelObject(target, className, value) \
+	className *object = [[className alloc] initWithJSONDictionary:value]; \
 	self.target = object;
 
 @interface RUObject (ModelParsing)

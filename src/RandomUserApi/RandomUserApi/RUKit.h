@@ -9,6 +9,20 @@
 #ifndef RandomUserApi_RUKit_h
 #define RandomUserApi_RUKit_h
 
+#import "RUObject.h"
+#import "RUObject+ModelParsing.h"
+#import "RUObject+Parsing.h"
 
+#import "RUUser.h"
+#import "RUUser+Parsing.h"
+#import "RUUser+Extension.h"
+
+#import "RUName.h"
+#import "RUName+Parsing.h"
+
+#import "RULocation.h"
+#import "RULocation+Parsing.h"
+
+#import "NSString+JSONParsingInformalProtocol.h"
 
 #endif

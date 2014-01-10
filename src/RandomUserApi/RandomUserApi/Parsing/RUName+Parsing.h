@@ -10,4 +10,8 @@
 
 @interface RUName (Parsing)
 
+-(void)parseTitle:(id)value;
+-(void)parseFirst:(id)value;
+-(void)parseLast:(id)value;
+
 @end

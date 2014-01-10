@@ -10,4 +10,20 @@
 
 @implementation RULocation (Parsing)
 
+-(void)parseStreet:(id)value {
+	RUParseString(street, value);
+}
+
+-(void)parseCity:(id)value {
+	RUParseString(city, value);
+}
+
+-(void)parseState:(id)value {
+	RUParseString(state, value);
+}
+
+-(void)parseZip:(id)value {
+	RUParseString(zip, value);
+}
+
 @end

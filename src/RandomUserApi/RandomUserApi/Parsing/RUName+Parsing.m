@@ -10,4 +10,16 @@
 
 @implementation RUName (Parsing)
 
+-(void)parseTitle:(id)value {
+	RUParseString(title, value);
+}
+
+-(void)parseFirst:(id)value {
+	RUParseString(first, value);
+}
+
+-(void)parseLast:(id)value {
+	RUParseString(last, value);
+}
+
 @end

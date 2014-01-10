@@ -10,4 +10,9 @@
 
 @interface RULocation (Parsing)
 
+-(void)parseStreet:(id)value;
+-(void)parseCity:(id)value;
+-(void)parseState:(id)value;
+-(void)parseZip:(id)value;
+
 @end
