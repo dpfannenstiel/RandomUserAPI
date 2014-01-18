@@ -34,11 +34,13 @@
 	NSArray *path = @[@"first", @"second"];
 	NSString *parameters = @"sample=param";
 	
-	NSString *testUrlStringValue = [NSString stringWithFormat:@"%@://%@/first/second/?%@", scheme, host, parameters];
+	NSString *testUrlStringValue = [NSString stringWithFormat:@"%@://%@/first/second?%@", scheme, host, parameters];
 	
 	NSURL *url = [NSURL urlForScheme:scheme host:host path:path parameters:parameters];
 	
-	XCTAssertTrue([testUrlStringValue isEqualToString:[url absoluteString]], @"Strings for url are not equal");
+	NSString *absoluteURL = [url absoluteString];
+	
+	XCTAssertTrue([testUrlStringValue isEqualToString:absoluteURL], @"Test String: %@, is unequal to sample string: %@", absoluteURL, testUrlStringValue);
 	
 }
 

@@ -12,7 +12,17 @@
 
 +(NSURL *)urlForScheme:(NSString *)scheme host:(NSString *)host path:(NSArray *)components parameters:(NSString *)parameters {
 	
-	return nil;
+	NSArray *componentArray = [@[@""] arrayByAddingObjectsFromArray:components];
+	
+	NSString *path = [componentArray componentsJoinedByString:@"/"];
+	
+	NSURL *resultURL = [[NSURL alloc] initWithScheme:scheme host:host path:path];
+	
+	NSString *parameterizedUrl = [[resultURL absoluteString] stringByAppendingFormat:@"?%@", parameters];
+	
+	resultURL = [NSURL URLWithString:parameterizedUrl];
+	
+	return resultURL;
 	
 }
 
