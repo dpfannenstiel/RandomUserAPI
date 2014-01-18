@@ -20,9 +20,14 @@
 #import "RUName.h"
 #import "RUName+Parsing.h"
 
+#import "RUSession.h"
+
 #import "RULocation.h"
 #import "RULocation+Parsing.h"
 
 #import "NSString+JSONParsingInformalProtocol.h"
+#import "NSDictionary+RUParameters.h"
+#import "NSURL+RU.h"
+#import "NSURL+Extension.h"
 
 #endif

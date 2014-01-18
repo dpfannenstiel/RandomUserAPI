@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "RUKit.h"
 
 @interface RandomUserApiTests : XCTestCase
 
@@ -26,9 +27,19 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+-(void)testUrlGeneration {
+	
+	NSString *scheme = @"http";
+	NSString *host = @"test.com";
+	NSArray *path = @[@"first", @"second"];
+	NSString *parameters = @"sample=param";
+	
+	NSString *testUrlStringValue = [NSString stringWithFormat:@"%@://%@/first/second/?%@", scheme, host, parameters];
+	
+	NSURL *url = [NSURL urlForScheme:scheme host:host path:path parameters:parameters];
+	
+	XCTAssertTrue([testUrlStringValue isEqualToString:[url absoluteString]], @"Strings for url are not equal");
+	
 }
 
 @end
