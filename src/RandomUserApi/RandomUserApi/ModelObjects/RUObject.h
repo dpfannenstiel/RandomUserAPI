@@ -20,6 +20,8 @@
  
  The concrete sublcasses should conform to the JSONParsing Informal Protocol.
  
+ @param jsonDictionary The JSON dictionary that should be parsed into a native
+ model object.
  */
 -(id)initWithJSONDictionary:(NSDictionary *)jsonDictionary;
 

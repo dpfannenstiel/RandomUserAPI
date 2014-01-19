@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		DAC503DE188B7BDE00EA8883 /* RUKit Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DAC503DF188B7BDE00EA8883 /* Build configuration list for PBXAggregateTarget "RUKit Documentation" */;
+			buildPhases = (
+				DAC503E2188B7BF100EA8883 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "RUKit Documentation";
+			productName = "RUKit Documentation";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		DAB7CBED187F956300DDC6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBEC187F956300DDC6BD /* Foundation.framework */; };
 		DAB7CBFB187F956300DDC6BD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7CBFA187F956300DDC6BD /* XCTest.framework */; };
@@ -390,6 +404,7 @@
 			targets = (
 				DAB7CBE8187F956300DDC6BD /* RandomUserApi */,
 				DAB7CBF8187F956300DDC6BD /* RandomUserApiTests */,
+				DAC503DE188B7BDE00EA8883 /* RUKit Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -404,6 +419,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DAC503E2188B7BF100EA8883 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/AppleDoc \\\n--project-name RUKit \\\n--project-company \"Dustin Pfannenstiel\" \\\n--company-id \"com.dustinpfannenstiel\" \\\n--exit-threshold 2 \\\n--output \"AppleDoc\" .";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAB7CBE5187F956300DDC6BD /* Sources */ = {
@@ -611,6 +642,20 @@
 			};
 			name = Release;
 		};
+		DAC503E0188B7BDE00EA8883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAC503E1188B7BDE00EA8883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -637,6 +682,15 @@
 			buildConfigurations = (
 				DAB7CC10187F956300DDC6BD /* Debug */,
 				DAB7CC11187F956300DDC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC503DF188B7BDE00EA8883 /* Build configuration list for PBXAggregateTarget "RUKit Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC503E0188B7BDE00EA8883 /* Debug */,
+				DAC503E1188B7BDE00EA8883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
