@@ -13,5 +13,6 @@ extern NSString * const JPIPException;
 @interface NSString (JSONParsingInformalProtocol)
 
 -(NSString *)selectorValue;
+-(NSString *)urlEncoded;
 
 @end

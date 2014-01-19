@@ -13,6 +13,8 @@
 
 +(NSURL *)urlForRUUserParameterString:(NSString *)parameterString {
 	
+	// TODO:  Add the path to the version
+	
 	return [NSURL urlForScheme:RUScheme host:RUHost path:nil parameters:parameterString];
 	
 }

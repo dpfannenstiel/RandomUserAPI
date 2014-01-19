@@ -56,4 +56,27 @@
 	RUParseString(pictureUrl, value);
 }
 
+-(void)parseSha1:(id)value {
+	RUParseString(sha1Hash, value)
+}
+-(void)parseUsername:(id)value {
+	RUParseString(username, value);
+}
+
+-(void)parseRegistered:(id)value {
+	RUParseString(registered, value);
+}
+
+-(void)parseSha256:(id)value {
+	RUParseString(sha256, value);
+}
+
+-(void)parseMd5:(id)value {
+	RUParseString(md5Hash, value);
+}
+
+-(void)parseSalt:(id)value {
+	RUParseString(salt, value);
+}
+
 @end

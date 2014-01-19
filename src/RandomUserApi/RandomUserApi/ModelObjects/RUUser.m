@@ -10,4 +10,9 @@
 
 @implementation RUUser
 
+-(NSString *)description {
+	NSString *result = [NSString stringWithFormat:@"{%@, %@}", self.username, self.seed];
+	return result;
+}
+
 @end

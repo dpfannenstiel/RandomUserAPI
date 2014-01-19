@@ -8,6 +8,8 @@
 
 #import "RUObject.h"
 
+typedef void (^NSURLSessionTaskCompletion)(NSData *data, NSURLResponse *response, NSError *error);
+
 @interface RUSession : RUObject
 
 @property (nonatomic, readonly) NSURLSession *urlSession;

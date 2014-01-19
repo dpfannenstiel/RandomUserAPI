@@ -60,6 +60,13 @@
 		DAC503CC188A22BC00EA8883 /* NSDictionary+RUParameters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAC503BB1888D8BE00EA8883 /* NSDictionary+RUParameters.h */; };
 		DAC503CD188A22BC00EA8883 /* NSURL+RU.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAC503C31888D9E300EA8883 /* NSURL+RU.h */; };
 		DAC503CE188A22BC00EA8883 /* NSURL+Extension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAC503C7188A222C00EA8883 /* NSURL+Extension.h */; };
+		DAC503D3188B527500EA8883 /* RUHeaders.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAC503D2188B525500EA8883 /* RUHeaders.h */; };
+		DAC503D6188B534400EA8883 /* RUSession+RUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC503D5188B534400EA8883 /* RUSession+RUUser.m */; };
+		DAC503D7188B534400EA8883 /* RUSession+RUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC503D5188B534400EA8883 /* RUSession+RUUser.m */; };
+		DAC503D8188B535700EA8883 /* RUSession+RUUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAC503D4188B534400EA8883 /* RUSession+RUUser.h */; };
+		DAC503DB188B569000EA8883 /* NSMutableURLRequest+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC503DA188B569000EA8883 /* NSMutableURLRequest+Extension.m */; };
+		DAC503DC188B569000EA8883 /* NSMutableURLRequest+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC503DA188B569000EA8883 /* NSMutableURLRequest+Extension.m */; };
+		DAC503DD188B573800EA8883 /* NSMutableURLRequest+Extension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAC503D9188B569000EA8883 /* NSMutableURLRequest+Extension.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +86,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				DAC503DD188B573800EA8883 /* NSMutableURLRequest+Extension.h in CopyFiles */,
+				DAC503D8188B535700EA8883 /* RUSession+RUUser.h in CopyFiles */,
+				DAC503D3188B527500EA8883 /* RUHeaders.h in CopyFiles */,
 				DAC503CB188A22BC00EA8883 /* RUSession.h in CopyFiles */,
 				DAC503CC188A22BC00EA8883 /* NSDictionary+RUParameters.h in CopyFiles */,
 				DAC503CD188A22BC00EA8883 /* NSURL+RU.h in CopyFiles */,
@@ -142,6 +152,11 @@
 		DAC503C41888D9E300EA8883 /* NSURL+RU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+RU.m"; path = "FoundationExtensions/NSURL+RU.m"; sourceTree = "<group>"; };
 		DAC503C7188A222C00EA8883 /* NSURL+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+Extension.h"; path = "FoundationExtensions/NSURL+Extension.h"; sourceTree = "<group>"; };
 		DAC503C8188A222C00EA8883 /* NSURL+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Extension.m"; path = "FoundationExtensions/NSURL+Extension.m"; sourceTree = "<group>"; };
+		DAC503D2188B525500EA8883 /* RUHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUHeaders.h; sourceTree = "<group>"; };
+		DAC503D4188B534400EA8883 /* RUSession+RUUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RUSession+RUUser.h"; sourceTree = "<group>"; };
+		DAC503D5188B534400EA8883 /* RUSession+RUUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RUSession+RUUser.m"; sourceTree = "<group>"; };
+		DAC503D9188B569000EA8883 /* NSMutableURLRequest+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+Extension.h"; path = "FoundationExtensions/NSMutableURLRequest+Extension.h"; sourceTree = "<group>"; };
+		DAC503DA188B569000EA8883 /* NSMutableURLRequest+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+Extension.m"; path = "FoundationExtensions/NSMutableURLRequest+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB7CC12187F958E00DDC6BD /* RUKit.h */,
+				DAC503D2188B525500EA8883 /* RUHeaders.h */,
 				DAB7CC1B187F96AF00DDC6BD /* ModelObjects */,
 				DAB7CC1C187F96CB00DDC6BD /* Parsing */,
 				DAB7CC42187FA37700DDC6BD /* ObjectExtensions */,
@@ -250,6 +266,7 @@
 				DAB7CC26187F97B100DDC6BD /* RULocation.m */,
 				DAC503B71888D39900EA8883 /* RUSession.h */,
 				DAC503B81888D39900EA8883 /* RUSession.m */,
+				DAC503D1188B47B200EA8883 /* RUSessionExtensions */,
 			);
 			path = ModelObjects;
 			sourceTree = "<group>";
@@ -282,6 +299,8 @@
 				DAC503C41888D9E300EA8883 /* NSURL+RU.m */,
 				DAC503C7188A222C00EA8883 /* NSURL+Extension.h */,
 				DAC503C8188A222C00EA8883 /* NSURL+Extension.m */,
+				DAC503D9188B569000EA8883 /* NSMutableURLRequest+Extension.h */,
+				DAC503DA188B569000EA8883 /* NSMutableURLRequest+Extension.m */,
 			);
 			name = FoundationExtensions;
 			sourceTree = "<group>";
@@ -293,6 +312,15 @@
 				DAB7CC44187FA3AC00DDC6BD /* RUUser+Extension.m */,
 			);
 			name = ObjectExtensions;
+			sourceTree = "<group>";
+		};
+		DAC503D1188B47B200EA8883 /* RUSessionExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAC503D4188B534400EA8883 /* RUSession+RUUser.h */,
+				DAC503D5188B534400EA8883 /* RUSession+RUUser.m */,
+			);
+			path = RUSessionExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,9 +416,11 @@
 				DAB7CC15187F965700DDC6BD /* RUUser.m in Sources */,
 				DAB7CC45187FA3AC00DDC6BD /* RUUser+Extension.m in Sources */,
 				DAB7CC1F187F972B00DDC6BD /* RUObject+ModelParsing.m in Sources */,
+				DAC503DB188B569000EA8883 /* NSMutableURLRequest+Extension.m in Sources */,
 				DAC503C51888D9E300EA8883 /* NSURL+RU.m in Sources */,
 				DAB7CC40187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m in Sources */,
 				DAB7CC37187F9AE300DDC6BD /* RUName+Parsing.m in Sources */,
+				DAC503D6188B534400EA8883 /* RUSession+RUUser.m in Sources */,
 				DAB7CC3B187F9B0600DDC6BD /* RUUser+Parsing.m in Sources */,
 				DAB7CC19187F96A600DDC6BD /* RUObject.m in Sources */,
 				DAC503B91888D39900EA8883 /* RUSession.m in Sources */,
@@ -418,8 +448,10 @@
 				DAC503BE1888D8BE00EA8883 /* NSDictionary+RUParameters.m in Sources */,
 				DAB7CC28187F97B100DDC6BD /* RULocation.m in Sources */,
 				DAB7CC41187F9FAF00DDC6BD /* NSString+JSONParsingInformalProtocol.m in Sources */,
+				DAC503D7188B534400EA8883 /* RUSession+RUUser.m in Sources */,
 				DAC503BA1888D86500EA8883 /* RUSession.m in Sources */,
 				DAB7CC2C187F9A9700DDC6BD /* RUObject+Parsing.m in Sources */,
+				DAC503DC188B569000EA8883 /* NSMutableURLRequest+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

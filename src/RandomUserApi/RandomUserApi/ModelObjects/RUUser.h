@@ -37,6 +37,18 @@
 
 @property (nonatomic, strong) NSString *seed;
 
+@property (nonatomic, strong) NSString *version;
+
+@property (nonatomic, strong) NSString *username;
+
+@property (nonatomic, strong) NSString *registered;
+
+@property (nonatomic, strong) NSString *sha256;
+
+@property (nonatomic, strong) NSString *salt;
+
+// TODO:  Add dob
+
 @end
 
 

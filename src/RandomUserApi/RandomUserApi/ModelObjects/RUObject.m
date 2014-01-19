@@ -23,7 +23,12 @@
 		for (NSString *k in keys) {
 			
 			value = [jsonDictionary valueForKey:k];
-			selectorString = [k selectorValue];
+			@try {
+				selectorString = [k selectorValue];
+			} @catch (NSException *e) {
+				DLog(@"%@", e);
+				continue;
+			}
 			selector = NSSelectorFromString(selectorString);
 			if ([self respondsToSelector:selector]) {
 				SuppressPerformSelectorLeakWarning([self performSelector:selector withObject:value]);

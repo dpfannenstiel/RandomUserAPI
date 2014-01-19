@@ -9,6 +9,8 @@
 #ifndef RandomUserApi_RUKit_h
 #define RandomUserApi_RUKit_h
 
+#import "RUHeaders.h"
+
 #import "RUObject.h"
 #import "RUObject+ModelParsing.h"
 #import "RUObject+Parsing.h"
@@ -21,6 +23,7 @@
 #import "RUName+Parsing.h"
 
 #import "RUSession.h"
+#import "RUSession+RUUser.h"
 
 #import "RULocation.h"
 #import "RULocation+Parsing.h"
@@ -29,5 +32,6 @@
 #import "NSDictionary+RUParameters.h"
 #import "NSURL+RU.h"
 #import "NSURL+Extension.h"
+#import "NSMutableURLRequest+Extension.h"
 
 #endif

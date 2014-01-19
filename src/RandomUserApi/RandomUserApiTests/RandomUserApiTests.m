@@ -9,6 +9,11 @@
 #import <XCTest/XCTest.h>
 #import "RUKit.h"
 
+#define Waiting(x) \
+	while(!x) { \
+		[[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]]; \
+	}
+
 @interface RandomUserApiTests : XCTestCase
 
 @end
@@ -41,6 +46,28 @@
 	NSString *absoluteURL = [url absoluteString];
 	
 	XCTAssertTrue([testUrlStringValue isEqualToString:absoluteURL], @"Test String: %@, is unequal to sample string: %@", absoluteURL, testUrlStringValue);
+	
+}
+
+-(void)testSimpleConnection {
+	
+	__block BOOL complete = NO;
+	__block BOOL success = NO;
+	
+	[[RUSession defaultSession] getUserForParameters:nil completion:^(RUObject *object, NSError *error) {
+
+		if (error == nil) {
+			DLog(@"Object: %@", (RUUser *)object);
+			success = YES;
+		}
+		
+		complete = YES;
+	
+	}];
+	
+	Waiting(complete);
+	
+	XCTAssertTrue(success, @"An error occured getting a user");
 	
 }
 

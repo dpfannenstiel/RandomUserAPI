@@ -16,7 +16,7 @@ static NSString * const JPIPStringExceptionReasonStringLength = @"String had len
 
 -(NSString *)selectorValue {
 	
-	if ([self length]) {
+	if ([self length] == 0) {
 		NSException *exception = [NSException exceptionWithName:JPIPException reason:JPIPStringExceptionReasonStringLength userInfo:nil];
 		
 		@throw exception;
@@ -29,4 +29,14 @@ static NSString * const JPIPStringExceptionReasonStringLength = @"String had len
 	
 }
 
+-(NSString *)urlEncoded {
+	
+	CFStringRef unsafeString = (__bridge CFStringRef)self;
+	
+	CFStringRef safeString = CFURLCreateStringByAddingPercentEscapes (NULL, unsafeString, NULL, CFSTR("/%&=?$#+-~@<>|\\*,.()[]{}^!"), kCFStringEncodingUTF8);
+	
+	NSString *results = (NSString *)CFBridgingRelease(safeString);
+	
+	return results;
+}
 @end

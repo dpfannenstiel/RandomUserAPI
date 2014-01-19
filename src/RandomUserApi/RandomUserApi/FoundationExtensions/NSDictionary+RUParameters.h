@@ -11,5 +11,6 @@
 @interface NSDictionary (RUParameters)
 
 +(NSDictionary *)parameterDictionaryWithSeed:(NSString *)string;
+-(NSString *)parameterStringValue;
 
 @end

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 static NSString *const RUScheme = @"http";
-static NSString *const RUHost = @"randomuser.me";
+static NSString *const RUHost = @"api.randomuser.me";
 
 @interface NSURL (RU)
 

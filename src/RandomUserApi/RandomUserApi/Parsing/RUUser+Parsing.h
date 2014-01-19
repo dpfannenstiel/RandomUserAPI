@@ -21,5 +21,11 @@
 -(void)parseCell:(id)value;
 -(void)parseSSN:(id)value;
 -(void)parsePicture:(id)value;
+-(void)parseSha1:(id)value;
+-(void)parseUsername:(id)value;
+-(void)parseRegistered:(id)value;
+-(void)parseSha256:(id)value;
+-(void)parseMd5:(id)value;
+-(void)parseSalt:(id)value;
 
 @end
