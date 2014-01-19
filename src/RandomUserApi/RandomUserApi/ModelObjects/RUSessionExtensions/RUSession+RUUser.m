@@ -38,6 +38,9 @@
 					user.seed = [resultDict objectForKey:@"seed"];
 					user.version = [resultDict objectForKey:@"version"];
 					
+					DLog(@"%@", user.name);
+					DLog(@"%@", user.location);
+					
 				}
 			} else if (jsonError) {
 				finalError = jsonError;

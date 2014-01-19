@@ -8,11 +8,26 @@
 
 #import "RUObject+Parsing.h"
 
+/*! A model object representation of a location from the Random User API
+ 
+ This class is a concrete implementation of a RUObject.
+ */
 @interface RULocation : RUObject
 
+/*! The street address.
+ */
 @property (nonatomic, strong) NSString *street;
+
+/*! The city.
+ */
 @property (nonatomic, strong) NSString *city;
+
+/*! The state.
+ */
 @property (nonatomic, strong) NSString *state;
+
+/*! The zip code.
+ */
 @property (nonatomic, strong) NSString *zip;
 
 @end

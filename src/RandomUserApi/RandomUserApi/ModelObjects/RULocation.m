@@ -10,4 +10,8 @@
 
 @implementation RULocation
 
+-(NSString *)description {
+	return [NSString stringWithFormat:@"%@: {%@, %@, %@, %@}", NSStringFromClass([self class]), _street, _city, _state, _zip];
+}
+
 @end

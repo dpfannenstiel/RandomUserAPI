@@ -56,8 +56,10 @@
 	
 	[[RUSession defaultSession] getUserForParameters:nil completion:^(RUObject *object, NSError *error) {
 
+		RUUser *o = (RUUser *)object;
+		
 		if (error == nil) {
-			DLog(@"Object: %@", (RUUser *)object);
+			DLog(@"Object: %@", o);
 			success = YES;
 		}
 		
