@@ -13,6 +13,11 @@ static NSString *const RUHost = @"api.randomuser.me";
 
 @interface NSURL (RU)
 
+/*!  Generate an URL to retrieve a User from the RandomUser API.
+ 
+ @param parameterString The parameters to pass to the API.
+ @return A fully qualified URL for use.
+ */
 +(NSURL *)urlForRUUserParameterString:(NSString *)parameterString;
 
 @end

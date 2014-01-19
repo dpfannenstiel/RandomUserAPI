@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/dustin/Library/Developer/Shared/Documentation/DocSets/com.dustinpfannenstiel.RUKit.docset
+Time: 2014-01-19 03:25:31 +0000

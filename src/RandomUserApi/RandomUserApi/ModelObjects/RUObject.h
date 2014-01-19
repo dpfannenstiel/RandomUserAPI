@@ -22,6 +22,7 @@
  
  @param jsonDictionary The JSON dictionary that should be parsed into a native
  model object.
+ @return An instantiated RUObject representing the model object.
  */
 -(id)initWithJSONDictionary:(NSDictionary *)jsonDictionary;
 

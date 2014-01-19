@@ -8,12 +8,20 @@
 
 #import "RUUser.h"
 
+/*! Defines a gender type.
+ */
 typedef NS_ENUM(NSInteger, RUUserGender) {
 	
+	/*! The gender is unset.
+	 */
 	RUUserGenderUnset = 0,
 	
+	/*! The gender is male.
+	 */
 	RUUserGenderMale = 1,
 	
+	/*! The gender is female.
+	 */
 	RUUserGenderFemale = 2
 	
 };
@@ -21,6 +29,13 @@ typedef NS_ENUM(NSInteger, RUUserGender) {
 
 @interface RUUser (Extension)
 
+/*! Access the gender of the user as a typedef property.
+ 
+ The readwrite feature of this property sets or interprets the `genderString`
+ as a RUUserGender each time this property is set of accessed.
+ 
+ @see genderString
+ */
 @property (nonatomic, readwrite) RUUserGender gender;
 
 @end
