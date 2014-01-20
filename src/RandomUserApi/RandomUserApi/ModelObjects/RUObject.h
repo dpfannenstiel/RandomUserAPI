@@ -13,6 +13,7 @@
  RUObject is an abstract class and should not be instantiated. Instead concrete
  classes should inherit from this class and be used.
  
+ @note This is an abstract class, subclass it to for use.
  */
 @interface RUObject : NSObject
 
@@ -23,6 +24,8 @@
  @param jsonDictionary The JSON dictionary that should be parsed into a native
  model object.
  @return An instantiated RUObject representing the model object.
+ @warning If an unknown element is provided in the dictionary or a critical
+ element is missing the consumer will not be informed.
  */
 -(id)initWithJSONDictionary:(NSDictionary *)jsonDictionary;
 
