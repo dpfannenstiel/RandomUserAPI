@@ -10,7 +10,7 @@
 
 @implementation RUName
 
--(NSString *)description {
+-(NSString *)debugDescription {
 	return [NSString stringWithFormat:@"%@: {%@, %@, %@}", NSStringFromClass([self class]), _title, _first, _last];
 }
 

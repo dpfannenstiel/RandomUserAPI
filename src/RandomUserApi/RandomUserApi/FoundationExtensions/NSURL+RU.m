@@ -9,13 +9,13 @@
 #import "NSURL+RU.h"
 #import "NSURL+Extension.h"
 
+static NSString *const RUVersion = @"0.4.1";
+
 @implementation NSURL (RU)
 
 +(NSURL *)urlForRUUserParameterString:(NSString *)parameterString {
-	
-	// TODO:  Add the path to the version
-	
-	return [NSURL urlForScheme:RUScheme host:RUHost path:nil parameters:parameterString];
+
+	return [NSURL urlForScheme:RUScheme host:RUHost path:@[RUVersion] parameters:parameterString];
 	
 }
 

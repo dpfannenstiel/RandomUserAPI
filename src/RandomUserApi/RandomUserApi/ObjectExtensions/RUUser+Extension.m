@@ -12,10 +12,26 @@
 
 -(void)setGender:(RUUserGender)gender {
 	
+	switch (gender) {
+		case RUUserGenderFemale:
+			self.genderString = @"female";
+			break;
+		case RUUserGenderMale:
+			self.genderString = @"male";
+			break;
+		default:
+			break;
+	}
+	
 }
 
 -(RUUserGender)gender {
 	
+	if ([[self.genderString lowercaseString] isEqualToString:@"female"]) {
+		return RUUserGenderFemale;
+	} else if ([[self.genderString lowercaseString] isEqualToString:@"male"]) {
+		return RUUserGenderMale;
+	}
 	return RUUserGenderUnset;
 	
 }

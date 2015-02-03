@@ -10,6 +10,9 @@
 #import "NSString+JSONParsingInformalProtocol.h"
 
 static NSString *const RUParameterKeySeed = @"seed";
+static NSString *const RUParameterKeyKey = @"key";
+static NSString *const RUParameterKeyGender = @"gender";
+static NSString *const RUParameterKeyResults = @"results";
 
 @implementation NSDictionary (RUParameters)
 
@@ -23,6 +26,34 @@ static NSString *const RUParameterKeySeed = @"seed";
 	
 	return result;
 }
+
+-(NSDictionary *)dictionaryByAddingSeed:(NSString *)string {
+	NSMutableDictionary *d = [NSMutableDictionary dictionaryWithDictionary:self];
+	[d setObject:string forKey:RUParameterKeySeed];
+	return d;
+}
+
+-(NSDictionary *)dictionaryByAddingGender:(RUUserGender)gender {
+	NSAssert(gender != RUUserGenderUnset, @"Attempt to request an invalid gender");
+	NSMutableDictionary *d = [NSMutableDictionary dictionaryWithDictionary:self];
+	
+	NSString *string = (gender == RUUserGenderMale ? @"male" : @"female");
+	[d setObject:string forKey:RUParameterKeyGender];
+	return d;
+}
+
+-(NSDictionary *)dictionaryByAddingResults:(NSNumber *)results {
+	NSMutableDictionary *d = [NSMutableDictionary dictionaryWithDictionary:self];
+	[d setObject:results forKey:RUParameterKeyResults];
+	return d;
+}
+
+-(NSDictionary *)dictionaryByAddingKey:(NSString *)key {
+	NSMutableDictionary *d = [NSMutableDictionary dictionaryWithDictionary:self];
+	[d setObject:key forKey:RUParameterKeyKey];
+	return d;
+}
+
 
 -(NSString *)parameterStringValue {
 	

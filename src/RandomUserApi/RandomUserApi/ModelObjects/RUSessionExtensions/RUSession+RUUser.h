@@ -23,4 +23,17 @@
  */
 -(void)getUserForParameters:(NSDictionary *)parameters completion:(RUSessionModelObjectCompletion)completionBlock;
 
+/*! Retrieve a colleciton of users from the service.
+ 
+ A NSURLSessionDataTask will be generated and communicate with the server.  The
+ response from the server will be handled internally and then the results will
+ be passed to the completionBlock.
+ 
+ @param count The number of users requested.  This number will be added to the passed parameters block using ``dictionaryByAddingResults:``.
+ @param parameters A dictionary of parameters that will be sent to the service.
+ @param completionBlock A response block what will be called on the main thread
+ after communication with the server is complete.
+ */
+-(void)getUsers:(NSNumber *)count forParameters:(NSDictionary *)parameters completion(RUSessionArrayCompletion)completionBlock;
+
 @end

@@ -11,7 +11,7 @@
 
 #import "RUObject.h"
 
-typedef void (^RUSessionModelObjectCompletion)(RUObject *object, NSError *error);
-typedef void (^RUSessionArrayCompletion)(NSArray *array, NSError *error);
+typedef void (^RUSessionModelObjectCompletion)(RUObject *object, NSError *error, NSDictionary *infoDictionary);
+typedef void (^RUSessionArrayCompletion)(NSArray *array, NSError *error, NSDictionary *infoDictionary);
 
 #endif
